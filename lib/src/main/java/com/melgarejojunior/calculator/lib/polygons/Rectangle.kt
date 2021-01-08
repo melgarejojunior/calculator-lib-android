@@ -1,15 +1,16 @@
 package com.melgarejojunior.calculator.lib.polygons
-package com.melgarejojunior.calculator.lib.Polygon
+
+import com.melgarejojunior.calculator.lib.Polygon
 
 data class Rectangle(
-    val h: Float,
-    val b: Float
+    val h: Double,
+    val b: Double
 ) : Polygon {
 
-    override fun area(): Float {
+    override fun area(): Double {
         return b * h
     }
-    override fun perimeter(): Float {
+    override fun perimeter(): Double {
         return b + b + h + h
     }
 }

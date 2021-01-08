@@ -1,18 +1,18 @@
 package com.melgarejojunior.calculator.lib.polygons
 
-package com.melgarejojunior.calculator.lib.Polygon
+import com.melgarejojunior.calculator.lib.Polygon
 
 data class Trapezium(
-    val h: Float,
-    val b: Float,
-    val B: Float
+    val h: Double,
+    val minBase: Double,
+    val maxBase: Double
 ) : Polygon {
 
-    override fun area(): Float {
-        return ((B + b) * h) / 2
+    override fun area(): Double {
+        return ((maxBase + minBase) * h) / 2
     }
 
-    override fun perimeter(): Float {
+    override fun perimeter(): Double {
         return TODO("I have to calculate it")
     }
 }

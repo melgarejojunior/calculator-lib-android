@@ -1,14 +1,15 @@
 package com.melgarejojunior.calculator.lib.polygons
-package com.melgarejojunior.calculator.lib.Polygon
+
+import com.melgarejojunior.calculator.lib.Polygon
 
 data class Square(
-    val l: Float
+    val l: Double
 ) : Polygon {
 
-    override fun area(): Float {
+    override fun area(): Double {
         return l * l
     }
-    override fun perimeter(): Float {
+    override fun perimeter(): Double {
         return 4 * l
     }
 }
