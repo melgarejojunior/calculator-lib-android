@@ -1,4 +1,4 @@
-package com.melgarejojunior.calculator.lib
+package com.melgarejojunior.calculator.lib.geometry
 
 interface Polygon {
     fun area(): Double

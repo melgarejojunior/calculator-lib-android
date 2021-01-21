@@ -1,6 +1,6 @@
-package com.melgarejojunior.calculator.lib.polygons
+package com.melgarejojunior.calculator.lib.geometry.polygons
 
-import com.melgarejojunior.calculator.lib.Polygon
+import com.melgarejojunior.calculator.lib.geometry.Polygon
 import kotlin.math.PI
 
 class Circle private constructor(

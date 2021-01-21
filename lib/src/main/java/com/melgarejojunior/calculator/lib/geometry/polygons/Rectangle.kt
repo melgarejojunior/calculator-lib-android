@@ -1,6 +1,6 @@
-package com.melgarejojunior.calculator.lib.polygons
+package com.melgarejojunior.calculator.lib.geometry.polygons
 
-import com.melgarejojunior.calculator.lib.Polygon
+import com.melgarejojunior.calculator.lib.geometry.Polygon
 
 data class Rectangle(
     val h: Double,

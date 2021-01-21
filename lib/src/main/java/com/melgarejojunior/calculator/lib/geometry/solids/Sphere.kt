@@ -1,6 +1,6 @@
-package com.melgarejojunior.calculator.lib.solids
+package com.melgarejojunior.calculator.lib.geometry.solids
 
-import com.melgarejojunior.calculator.lib.Solid
+import com.melgarejojunior.calculator.lib.geometry.Solid
 import kotlin.math.PI
 import kotlin.math.pow
 
