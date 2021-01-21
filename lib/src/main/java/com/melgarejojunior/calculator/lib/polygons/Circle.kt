@@ -13,7 +13,7 @@ class Circle private constructor(
     }
 
     override fun perimeter(): Double {
-        TODO("Not yet implemented")
+        return PI * diameter
     }
 
     companion object {
