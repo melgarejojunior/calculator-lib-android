@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'kotlin'
+    id 'maven-publish'
 }
 
 java {
@@ -10,4 +11,23 @@ java {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+
+publishing {
+    publications {
+       release(MavenPublication) {
+           from components.java
+
+           groupId = 'com.melgarejojunior.calculator.lib'
+           artifactId = 'release'
+           version = '1.0'
+       }
+        debug(MavenPublication) {
+            from components.java
+
+            groupId = 'com.melgarejojunior.calculator.lib'
+            artifactId = 'debug'
+            version = '1.0'
+        }
+    }
 }
