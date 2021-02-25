@@ -12,4 +12,13 @@
     <string name="button_2d_operation">2D</string>
     <string name="button_linear_system">Linear System</string>
     <string name="button_3d_operation">3D</string>
+    <string name="area_label">Area:</string>
+    <string name="perimeter_label">Perimeter:</string>
+    <string name="circle_fragment_hint">Insert diameter</string>
+    <string name="rectangle_fragment_base_hint">Insert base</string>
+    <string name="rectangle_fragment_height_hint">Insert height</string>
+    <string name="square_fragment_side_hint">Insert side</string>
+    <string name="trapezium_fragment_height_hint">Insert height</string>
+    <string name="trapezium_fragment_min_base_hint">Insert min base</string>
+    <string name="trapezium_fragment_max_base_hint">Insert max base</string>
 </resources>

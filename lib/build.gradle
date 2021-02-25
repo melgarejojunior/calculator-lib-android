@@ -5,8 +5,9 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+    withSourcesJar()
 }
 
 dependencies {
@@ -18,16 +19,16 @@ publishing {
        release(MavenPublication) {
            from components.java
 
-           groupId = 'com.melgarejojunior.calculator.lib'
-           artifactId = 'release'
+           groupId = 'com.melgarejojunior'
+           artifactId = 'calculator'
            version = '1.0'
        }
         debug(MavenPublication) {
             from components.java
 
-            groupId = 'com.melgarejojunior.calculator.lib'
-            artifactId = 'debug'
-            version = '1.0'
+            groupId = 'com.melgarejojunior'
+            artifactId = 'calculator'
+            version = '1.0-local'
         }
     }
 }
