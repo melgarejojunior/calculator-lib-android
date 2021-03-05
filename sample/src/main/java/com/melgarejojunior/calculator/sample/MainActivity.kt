@@ -20,7 +20,9 @@ class MainActivity : AppCompatActivity() {
         binding.contentMain.button2dOperation.setOnClickListener {
             openActivity(PolygonActivity.createIntent(this))
         }
-        binding.contentMain.button3dOperation.setOnClickListener { }
+        binding.contentMain.button3dOperation.setOnClickListener {
+            openActivity(SolidActivity.createIntent(this))
+        }
         binding.contentMain.buttonLinearSystemOperation.setOnClickListener { }
     }
 

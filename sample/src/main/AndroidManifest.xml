@@ -22,6 +22,9 @@
         <activity
             android:name=".PolygonActivity"
             android:theme="@style/Theme.Calculatorlibandroid.NoActionBar" />
+        <activity
+            android:name=".SolidActivity"
+            android:theme="@style/Theme.Calculatorlibandroid.NoActionBar" />
     </application>
 
 </manifest>

@@ -21,4 +21,7 @@
     <string name="trapezium_fragment_height_hint">Insert height</string>
     <string name="trapezium_fragment_min_base_hint">Insert min base</string>
     <string name="trapezium_fragment_max_base_hint">Insert max base</string>
+    <string name="base_area_label">Base\'s area:</string>
+    <string name="base_perimeter_label">Base\'s perimeter:</string>
+    <string name="volume_label">Volume:</string>
 </resources>
