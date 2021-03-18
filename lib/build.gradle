@@ -2,6 +2,7 @@ plugins {
     id 'java-library'
     id 'kotlin'
     id 'maven-publish'
+    id 'jacoco'
 }
 
 java {
@@ -10,8 +11,22 @@ java {
     withSourcesJar()
 }
 
+jacoco {
+    toolVersion = '0.8.5'
+}
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    testImplementation "junit:junit:4.2"
+}
+
+jacocoTestReport {
+    dependsOn "testDebugUnitTest"
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
 }
 
 publishing {
