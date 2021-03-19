@@ -22,7 +22,7 @@ dependencies {
 }
 
 jacocoTestReport {
-    dependsOn "testDebugUnitTest"
+    dependsOn "test"
     reports {
         xml.enabled = true
         html.enabled = true

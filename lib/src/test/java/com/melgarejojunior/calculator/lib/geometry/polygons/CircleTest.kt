@@ -2,6 +2,7 @@ package com.melgarejojunior.calculator.lib.geometry.polygons
 
 import junit.framework.TestCase.assertEquals
 import org.junit.Test
+import org.junit.runner.RunWith
 
 internal class CircleTest {
 
