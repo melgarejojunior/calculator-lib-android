@@ -30,6 +30,16 @@ jacocoTestReport {
 }
 
 publishing {
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/melgarejojunior/calculator-lib-android")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+            }
+        }
+    }
     publications {
        release(MavenPublication) {
            from components.java
