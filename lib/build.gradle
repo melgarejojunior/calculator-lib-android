@@ -35,8 +35,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/melgarejojunior/calculator-lib-android")
             credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+                username = System.getenv("USERNAME")
+                password = System.getenv("TOKEN")
             }
         }
     }
@@ -46,7 +46,7 @@ publishing {
 
            groupId = 'com.melgarejojunior'
            artifactId = 'calculator'
-           version = '1.0.0'
+           version = '1.0.1'
        }
         debug(MavenPublication) {
             from components.java
