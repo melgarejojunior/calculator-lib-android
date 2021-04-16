@@ -46,14 +46,14 @@ publishing {
 
            groupId = 'com.melgarejojunior'
            artifactId = 'calculator'
-           version = '1.0'
+           version = '1.0.0'
        }
         debug(MavenPublication) {
             from components.java
 
             groupId = 'com.melgarejojunior'
             artifactId = 'calculator'
-            version = '1.0-local'
+            version = '1.0.0-local'
         }
     }
 }
